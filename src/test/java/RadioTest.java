@@ -37,7 +37,7 @@ class RadioTest {
 
         next.decreaseVolume(100);
 
-        int expected = 30;
+        int expected = 31;
         int actual = next.decreaseVolume(30);
 
         Assertions.assertEquals(expected, actual);

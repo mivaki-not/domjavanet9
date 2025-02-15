@@ -30,7 +30,7 @@ public class Radio {
         return currentVolume;
     }
     public int decreaseVolume(int currentVolume) {
-        if (currentVolume > 100) {
+        if (currentVolume > 0) {
             currentVolume = currentVolume + 1;
         }
         return currentVolume;
