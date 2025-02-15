@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="RadioTest" time="0.097" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="RadioTest" time="0.047" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Users\Honor\.jdks\corretto-11.0.26\bin"/>
-    <property name="sun.java.command" value="C:\Users\Honor\AppData\Local\Temp\surefire2636529350745779184\surefirebooter1110091951635101357.jar C:\Users\Honor\AppData\Local\Temp\surefire2636529350745779184 2025-02-15T21-18-46_343-jvmRun1 surefire14855006311556977848tmp surefire_09781620924098996347tmp"/>
+    <property name="sun.java.command" value="C:\Users\Honor\AppData\Local\Temp\surefire13659381822030276702\surefirebooter12735951722599917155.jar C:\Users\Honor\AppData\Local\Temp\surefire13659381822030276702 2025-02-15T22-53-47_905-jvmRun1 surefire3049505436752763593tmp surefire_05229821269180085145tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Honor\Desktop\For Jococo\domjavanet9\target\test-classes;C:\Users\Honor\Desktop\For Jococo\domjavanet9\target\classes;C:\Users\Honor\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.2\junit-jupiter-5.7.2.jar;C:\Users\Honor\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\Honor\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Honor\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Honor\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\Honor\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.2\junit-jupiter-params-5.7.2.jar;C:\Users\Honor\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\Honor\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Honor\AppData\Local\Temp\surefire2636529350745779184\surefirebooter1110091951635101357.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Honor\AppData\Local\Temp\surefire13659381822030276702\surefirebooter12735951722599917155.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.26+4-LTS"/>
@@ -62,7 +62,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="setCurrentRadioStationNumber" classname="RadioTest" time="0.071"/>
-  <testcase name="decreaseVolumeTest" classname="RadioTest" time="0"/>
-  <testcase name="increaseVolumeTest" classname="RadioTest" time="0.002"/>
+  <testcase name="decreaseVolumeTest" classname="RadioTest" time="0.047"/>
+  <testcase name="CurrentRadioStationNumber2" classname="RadioTest" time="0"/>
+  <testcase name="CurrentRadioStationNumber" classname="RadioTest" time="0"/>
+  <testcase name="increaseVolumeTest" classname="RadioTest" time="0"/>
+  <testcase name="TestToturnOnTheSelectedStation" classname="RadioTest" time="0"/>
 </testsuite>

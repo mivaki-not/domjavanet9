@@ -7,6 +7,21 @@
     <list default="true" id="13f6af28-892a-40c2-a631-cb5c9b42f135" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Radio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Radio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RadioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RadioTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Radio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Radio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/domjavanet9-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/domjavanet9-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/Radio.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/default/Radio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/Radio.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/default/Radio.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/default/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/default/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/RadioTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/RadioTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-RadioTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-RadioTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/RadioTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +49,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.RadioTest.CurrentRadioStationNumber.executor": "Run",
+    "JUnit.RadioTest.CurrentRadioStationNumber2.executor": "Run",
+    "JUnit.RadioTest.TestToturnOnTheSelectedStation.executor": "Run",
     "JUnit.RadioTest.decreaseVolumeTest.executor": "Run",
+    "JUnit.RadioTest.executor": "Run",
     "JUnit.RadioTest.increaseVolume.executor": "Run",
     "JUnit.RadioTest.increaseVolumeTest.executor": "Debug",
     "JUnit.RadioTest.setCurrentRadioStationNumber.executor": "Debug",
@@ -64,7 +83,46 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RadioTest.decreaseVolumeTest">
+  <component name="RunManager" selected="JUnit.RadioTest.TestToturnOnTheSelectedStation">
+    <configuration name="RadioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="domjavanet9" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RadioTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RadioTest.CurrentRadioStationNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="domjavanet9" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RadioTest" />
+      <option name="METHOD_NAME" value="CurrentRadioStationNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RadioTest.CurrentRadioStationNumber2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="domjavanet9" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RadioTest" />
+      <option name="METHOD_NAME" value="CurrentRadioStationNumber2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RadioTest.TestToturnOnTheSelectedStation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="domjavanet9" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RadioTest" />
+      <option name="METHOD_NAME" value="TestToturnOnTheSelectedStation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RadioTest.decreaseVolumeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="domjavanet9" />
       <option name="PACKAGE_NAME" value="" />
@@ -75,42 +133,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.increaseVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="domjavanet9" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RadioTest" />
-      <option name="METHOD_NAME" value="increaseVolume" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RadioTest.increaseVolumeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="domjavanet9" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RadioTest" />
-      <option name="METHOD_NAME" value="increaseVolumeTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RadioTest.setCurrentRadioStationNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="domjavanet9" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RadioTest" />
-      <option name="METHOD_NAME" value="setCurrentRadioStationNumber" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RadioTest.TestToturnOnTheSelectedStation" />
+        <item itemvalue="JUnit.RadioTest.CurrentRadioStationNumber" />
+        <item itemvalue="JUnit.RadioTest.CurrentRadioStationNumber2" />
+        <item itemvalue="JUnit.RadioTest" />
         <item itemvalue="JUnit.RadioTest.decreaseVolumeTest" />
-        <item itemvalue="JUnit.RadioTest.increaseVolumeTest" />
-        <item itemvalue="JUnit.RadioTest.increaseVolume" />
-        <item itemvalue="JUnit.RadioTest.setCurrentRadioStationNumber" />
       </list>
     </recent_temporary>
   </component>
