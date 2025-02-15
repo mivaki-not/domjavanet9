@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Radio.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">domjavanet9</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Radio.java</span></div><h1>Radio.java</h1><pre class="source lang-java linenums"><span class="fc" id="L1">public class Radio {</span>
+
+    public int currentRadioStationNumber;
+
+    public int getCurrentRadioStationNumber() {
+<span class="fc" id="L6">        return currentRadioStationNumber;</span>
+    }
+
+    public void setCurrentRadioStationNumber(int newCurrentRadioStationNumber) {
+<span class="pc bpc" id="L10" title="1 of 2 branches missed.">        if (newCurrentRadioStationNumber &lt;0){</span>
+<span class="nc" id="L11">            newCurrentRadioStationNumber = 9;</span>
+<span class="nc" id="L12">            return;</span>
+        }
+<span class="pc bpc" id="L14" title="1 of 2 branches missed.">        if (newCurrentRadioStationNumber &gt;9){</span>
+<span class="nc" id="L15">            newCurrentRadioStationNumber = 0;</span>
+<span class="nc" id="L16">            return;</span>
+        }
+<span class="fc" id="L18">        currentRadioStationNumber = newCurrentRadioStationNumber;</span>
+<span class="fc" id="L19">    }</span>
+
+    public void setCurrentRadioStationNumber() {
+<span class="nc" id="L22">        currentRadioStationNumber = 9;</span>
+<span class="nc" id="L23">    }</span>
+
+
+    public int increaseVolume(int currentVolume) {
+<span class="fc bfc" id="L27" title="All 2 branches covered.">        if (currentVolume &lt; 100) {</span>
+<span class="fc" id="L28">            currentVolume = currentVolume + 1;</span>
+        }
+<span class="fc" id="L30">        return currentVolume;</span>
+    }
+    public int decreaseVolume(int currentVolume) {
+<span class="pc bpc" id="L33" title="1 of 2 branches missed.">        if (currentVolume &gt; 100) {</span>
+<span class="nc" id="L34">            currentVolume = currentVolume + 1;</span>
+        }
+<span class="fc" id="L36">        return currentVolume;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
