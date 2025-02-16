@@ -45,8 +45,8 @@ class RadioTest {
 
         next.increaseVolume(100);
 
-        int expected = 1;
-        int actual = next.increaseVolume(0);
+        int expected = 29;
+        int actual = next.increaseVolume(30);
 
         Assertions.assertEquals(expected, actual);
 
@@ -59,10 +59,23 @@ class RadioTest {
 
         next.decreaseVolume(100);
 
-        int expected = 31;
-        int actual = next.decreaseVolume(30);
+        int expected = 4;
+        int actual = next.decreaseVolume(3);
 
         Assertions.assertEquals(expected, actual);
 
      }
+
+    @Test
+    public void decreaseVolumeinNullTest() {
+        Radio next = new Radio();
+
+        next.decreaseVolume(100);
+
+        int expected = 0;
+        int actual = next.decreaseVolume(0);
+
+        Assertions.assertEquals(expected, actual);
+
+    }
 }

@@ -24,7 +24,7 @@ public class Radio {
 
     public int increaseVolume(int currentVolume) {
         if (currentVolume < 100) {
-            currentVolume = currentVolume + 1;
+            currentVolume = currentVolume - 1;
         }
         return currentVolume;
     }
