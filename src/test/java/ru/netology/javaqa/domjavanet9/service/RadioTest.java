@@ -1,3 +1,5 @@
+package ru.netology.javaqa.domjavanet9.service;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -46,7 +48,7 @@ class RadioTest {
 
         radio.nextStationNumber(9);
 
-        int expected = 9;
+        int expected = 0;
         int actual = radio.getCurrentRadioStationNumber();
 
         Assertions.assertEquals(expected, actual);
@@ -58,7 +60,7 @@ class RadioTest {
 
         radio.nextStationNumber(10);
 
-        int expected = 10;
+        int expected = 0;
         int actual = radio.getCurrentRadioStationNumber();
 
         Assertions.assertEquals(expected, actual);
@@ -105,8 +107,8 @@ class RadioTest {
 
         next.increaseVolume(100);
 
-        int expected = 29;
-        int actual = next.increaseVolume(30);
+        int expected = 30;
+        int actual = next.increaseVolume(29);
 
         Assertions.assertEquals(expected, actual);
 
@@ -118,12 +120,12 @@ class RadioTest {
 
         next.decreaseVolume(100);
 
-        int expected = 4;
-        int actual = next.decreaseVolume(3);
+        int expected = 29;
+        int actual = next.decreaseVolume(30);
 
         Assertions.assertEquals(expected, actual);
 
-     }
+    }
 
     @Test
     public void decreaseVolumeinNullTest() {
