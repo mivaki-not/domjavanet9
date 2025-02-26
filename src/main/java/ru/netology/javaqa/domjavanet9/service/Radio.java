@@ -2,45 +2,53 @@ package ru.netology.javaqa.domjavanet9.service;
 
 public class Radio {
 
+    private int minStation;
+    private int maxStation;
     private int currentRadioStationNumber;
-    private int currentVolume;
 
-    public void setMaxNumberStation() {
-        currentRadioStationNumber = 9;
+    public Radio() {
+        this.maxStation = 10;
+    }
+
+    public Radio(int currentStation) {
+        this.maxStation = currentStation - 1;
     }
 
     public int getCurrentRadioStationNumber() {
         return currentRadioStationNumber;
     }
 
-    public void nextStationNumber(int newCurrentRadioStationNumber) {
-        if (newCurrentRadioStationNumber < 9) {
-            currentRadioStationNumber = newCurrentRadioStationNumber + 1;
+    public int getMaxStation() {
+        return maxStation;
+    }
+
+    public int getMinStation() {
+        return minStation;
+    }
+
+    public void setCurrentRadioStationNumber(int newCurrentRadioStationNumber) {
+        if (newCurrentRadioStationNumber < 0) {
+            return;
+        }
+        if (newCurrentRadioStationNumber > maxStation) {
+            return;
+        }
+        currentRadioStationNumber = newCurrentRadioStationNumber;
+    }
+
+    public void next() {
+        if (currentRadioStationNumber < maxStation) {
+            currentRadioStationNumber = currentRadioStationNumber + 1;
         } else {
             currentRadioStationNumber = 0;
         }
     }
 
-    public void prevStationNumber(int newCurrentRadioStationNumber) {
-        if (newCurrentRadioStationNumber > 0) {
-            currentRadioStationNumber = newCurrentRadioStationNumber - 1;
+    public void prev() {
+        if (currentRadioStationNumber > 0) {
+            currentRadioStationNumber = currentRadioStationNumber - 1;
         } else {
-            currentRadioStationNumber = 9;
+            currentRadioStationNumber = maxStation;
         }
-    }
-
-
-    public int increaseVolume(int currentVolume) {
-        if (currentVolume < 100) {
-            currentVolume = currentVolume + 1;
-        }
-        return currentVolume;
-    }
-
-    public int decreaseVolume(int currentVolume) {
-        if (currentVolume > 0) {
-            currentVolume = currentVolume - 1;
-        }
-        return currentVolume;
     }
 }
